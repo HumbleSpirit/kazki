@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Основні мета-теги -->
+    <title>Майстер Мегабайтів | Інтерактивна історія для дітей</title>
+    <meta
+      name="description"
+      content="Захоплююча історія про героя, який рятує сервер від перевантаження. Інтерактивна казка про обчислення кілобайтів, мегабайтів і гігабайтів для дітей."
+    />
+    <meta name="author" content="Марта Бородкіна" />
+
+    <!-- Додаткові мета-теги для SEO -->
+    <meta
+      name="keywords"
+      content="дитяча історія, комп'ютери для дітей, цифровий світ, інтерактивна казка, навчання дітей, файли, комп'ютерна грамотність, освіта, мегабайти, гігабайти, кілобайти"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph мета-теги для соціальних мереж -->
+    <meta
+      property="og:title"
+      content="Майстер Мегабайтів | Інтерактивна історія для дітей"
+    />
+    <meta
+      property="og:description"
+      content="Захоплююча історія про героя, який рятує сервер від перевантаження. Дізнайся про обчислення кілобайтів, мегабайтів і гігабайтів!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="url_to_your_cover_image.jpg" />
+    <meta
+      property="og:url"
+      content="https://your-website.com/master-megabytes"
+    />
+    <meta property="og:locale" content="uk_UA" />
+
+    <!-- Twitter Card мета-теги -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Майстер Мегабайтів" />
+    <meta
+      name="twitter:description"
+      content="Інтерактивна історія для дітей про порятунок сервера"
+    />
+    <meta name="twitter:image" content="url_to_your_cover_image.jpg" />
+
+    <!-- Додаткові мета-теги -->
+    <meta name="theme-color" content="#5c940d" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="copyright" content="© 2024 Марта Бородкіна" />
+
+    <!-- Специфічні мета-теги для української мови -->
+    <meta property="article:tag" content="дитяча література" />
+    <meta property="article:tag" content="інтерактивні історії" />
+    <meta property="article:tag" content="освіта" />
+    <meta property="article:author" content="Марта Бородкіна" />
+    <meta property="article:published_time" content="2024-03-19" />
+    <meta property="article:section" content="Дитяча література" />
+
+    <!-- Schema.org розмітка для пошукових систем -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Майстер Мегабайтів",
+        "author": {
+          "@type": "Person",
+          "name": "Марта Бородкіна"
+        },
+        "description": "Інтерактивна історія для дітей про порятунок сервера та обчислення обсягу даних",
+        "inLanguage": "uk",
+        "genre": "Дитяча література",
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        "educationalLevel": "beginner",
+        "educationalUse": "instruction",
+        "learningResourceType": "interactive story"
+      }
+    </script>
+
+    <style>
+      /* Base styles - Mobile First */
+      body {
+        background-color: #f0f9ff;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        border: 2px solid #90ee90;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+      }
+
+      .section:hover {
+        transform: scale(1.02);
+        background: #e6ffec;
+      }
+
+      .image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 2px solid #9acd32;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      h1 {
+        color: #5c940d;
+        text-align: center;
+        margin: 15px 0;
+        font-size: 1.8em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(45deg, #5c940d, #6b8e23);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent; /* Fallback for browsers that don't support -webkit-text-fill-color */
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #495057;
+        margin: 0;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      /* Credits section - Mobile First */
+      .credits {
+        margin-top: 30px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        border: 2px dashed #90ee90;
+      }
+
+      .credits-title {
+        color: #5c940d;
+        font-size: 1.3em;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .tools-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .tool-item {
+        padding: 12px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: start;
+        gap: 10px;
+      }
+
+      .tool-icon {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+      }
+
+      .tool-content {
+        flex: 1;
+      }
+
+      .tool-name {
+        color: #5c940d;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .author {
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        color: #495057;
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Animation */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .section:nth-child(odd) {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .section:nth-child(even) {
+        animation: float 6s ease-in-out infinite reverse;
+      }
+
+      /* Tablet Breakpoint */
+      @media (min-width: 768px) {
+        .page {
+          max-width: 90%;
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        .section {
+          flex-direction: row;
+          gap: 20px;
+        }
+
+        .section.right {
+          flex-direction: row-reverse;
+        }
+
+        .image {
+          width: 45%;
+          margin-bottom: 0;
+        }
+
+        .tools-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .tool-icon {
+          width: 42px;
+          height: 42px;
+        }
+      }
+
+      /* Desktop Breakpoint */
+      @media (min-width: 1024px) {
+        .page {
+          max-width: 800px;
+          padding: 30px;
+          margin: 20px auto;
+        }
+
+        h1 {
+          font-size: 2.5em;
+          margin-bottom: 30px;
+        }
+
+        .section {
+          margin: 30px 0;
+          padding: 20px;
+        }
+
+        .image {
+          width: 300px;
+          height: 200px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 1.8;
+        }
+
+        .tool-icon {
+          width: 48px;
+          height: 48px;
+        }
+
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+      }
+      /* Credits section - Mobile First */
+      .credits {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto 0;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 12px;
+        border: 2px dashed #90ee90;
+      }
+
+      /* Rest of the credits styles */
+      .credits-title {
+        color: #5c940d;
+        font-size: 1.3em;
+        margin-bottom: 15px;
+        text-align: center;
+        background: linear-gradient(45deg, #5c940d, #6b8e23);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      /* Tablet Breakpoint */
+      @media (min-width: 768px) {
+        .credits {
+          max-width: 90%;
+          padding: 20px;
+        }
+      }
+
+      /* Desktop Breakpoint */
+      @media (min-width: 1024px) {
+        .credits {
+          max-width: 800px;
+          padding: 30px;
+          margin: 50px auto 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>💾 Майстер Мегабайтів 🚀</h1>
+
+      <div class="section">
+        <img
+          src="image-1.webp"
+          alt="Сервер з переповненою пам'яттю"
+          class="image"
+        />
+        <div class="text">
+          <p>
+            Ой-ой, здається, наш сервер потрапив у біду! Він перевантажений
+            файлами, як повітряна кулька, що ось-ось лусне. Якщо ми не
+            допоможемо, він може вимкнутися, і всі наші ігри та мультфільми
+            пропадуть!
+          </p>
+        </div>
+      </div>
+
+      <div class="section right">
+        <img
+          src="image-2.webp"
+          alt="Герой розглядає обсяг файлів"
+          class="image"
+        />
+        <div class="text">
+          <p>
+            Але не хвилюйтеся! На щастя, є я — майстер мегабайтів! Я можу
+            розібратися з цим файловим безладом. Щоб врятувати сервер, потрібно
+            дізнатися, які файли займають найбільше місця. Але як це зробити?
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <img
+          src="image-3.webp"
+          alt="Кілобайти, мегабайти, гігабайти"
+          class="image"
+        />
+        <div class="text">
+          <p>
+            Виявляється, файли бувають різного розміру. Деякі маленькі, як
+            зернятка, і займають кілька кілобайтів (КБ). Інші трохи більші, як
+            яблука, і займають мегабайти (МБ). А є й такі, як величезні кавуни,
+            - вони займають гігабайти (ГБ).
+          </p>
+        </div>
+      </div>
+
+      <div class="section right">
+        <img src="image-4.webp" alt="Обчислення файлів" class="image" />
+        <div class="text">
+          <p>
+            Давайте подивимось на файли сервера. Ага, тут є декілька малюнків по
+            500 КБ, відео на 1 ГБ, і купа документів по 2 МБ. Ого! Нам
+            доведеться попрацювати головою, щоб все порахувати.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <img src="image-5.webp" alt="Оптимізація файлів" class="image" />
+        <div class="text">
+          <p>
+            Ми не можемо видаляти важливі файли! Але ми можемо їх стиснути, як
+            повітря в пакеті. Так вони займатимуть менше місця. Ми також можемо
+            зберегти деякі з них на іншому диску.
+          </p>
+        </div>
+      </div>
+
+      <div class="section right">
+        <img src="image-6.webp" alt="Переміщення файлів" class="image" />
+        <div class="text">
+          <p>
+            Перемістимо великі відео на спеціальний архівний диск, стиснемо
+            документи та картинки. Таким чином звільнимо багато місця на нашому
+            сервері.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <img
+          src="image-7.webp"
+          alt="Сервер з достатньою пам'яттю"
+          class="image"
+        />
+        <div class="text">
+          <p>
+            Вау! Сервер дихає спокійно. Ми звільнили купу місця! Тепер усі ігри
+            та мультфільми знову працюють без проблем.
+          </p>
+        </div>
+      </div>
+
+      <div class="section right">
+        <img src="image-8.webp" alt="Герой святкує перемогу" class="image" />
+        <div class="text">
+          <p>
+            Ми — справжні майстри мегабайтів! Тепер ми знаємо, як працює пам'ять
+            комп'ютера і як обчислювати об'єм файлів. З нами все буде гаразд!
+          </p>
+        </div>
+      </div>
+
+      <div class="text">
+        <p>
+          Тож пам’ятайте, кожен файл має свій розмір, і важливо знати, скільки
+          місця він займає на нашому комп’ютері. І хто знає, можливо, ви також
+          станете майстром мегабайтів!
+        </p>
+      </div>
+    </div>
+
+    <div class="credits">
+      <div class="author">
+        <p>Автор: Марта Бородкіна</p>
+      </div>
+
+      <div class="credits-title">🤖 Інструменти штучного інтелекту</div>
+
+      <ul class="tools-list">
+        <li class="tool-item">
+          <img src="mid.webp" alt="Midjourney icon" class="tool-icon" />
+          <div class="tool-content">
+            <div class="tool-name">Midjourney</div>
+            <p>
+              Використано для створення яскравих, казкових ілюстрацій, які
+              передають магію цифрового світу та роблять історію більш
+              захопливою для дітей.
+            </p>
+          </div>
+        </li>
+
+        <li class="tool-item">
+          <img src="gpt.png" alt="ChatGPT icon" class="tool-icon" />
+          <div class="tool-content">
+            <div class="tool-name">ChatGPT</div>
+            <p>
+              Допоміг у структуруванні історії та створенні плавних переходів
+              між різними етапами пригод файлу, забезпечуючи логічну
+              послідовність подій.
+            </p>
+          </div>
+        </li>
+
+        <li class="tool-item">
+          <img src="claude.png" alt="Claude icon" class="tool-icon" />
+          <div class="tool-content">
+            <div class="tool-name">Claude</div>
+            <p>
+              Використано для удосконалення тексту та адаптації його для дитячої
+              аудиторії, а також для створення інтерактивного HTML-форматування.
+            </p>
+          </div>
+        </li>
+
+        <li class="tool-item">
+          <img src="stab.webp" alt="Stable Diffusion icon" class="tool-icon" />
+          <div class="tool-content">
+            <div class="tool-name">Stable Diffusion</div>
+            <p>
+              Застосовано для додаткової обробки та стилізації зображень, щоб
+              вони краще відповідали загальній атмосфері історії.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
