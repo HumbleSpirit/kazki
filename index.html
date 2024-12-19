@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Інтерактивні Історії для Дітей</title>
+    <meta
+      name="description"
+      content="Колекція інтерактивних історій для дітей, що навчають про цифровий світ. Пригоди маленького файлу та майстерність мегабайтів."
+    />
+    <meta name="author" content="Марія Бородкіна" />
+    <meta
+      name="keywords"
+      content="дитяча історія, комп'ютери для дітей, цифровий світ, інтерактивна казка, навчання дітей, файли, комп'ютерна грамотність, освіта, мегабайти, гігабайти, кілобайти"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: #f0f9ff;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1200px;
+        padding: 20px;
+      }
+
+      .story-card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        width: 300px;
+        transition: transform 0.3s ease;
+        border: 2px solid #228be6; /* Default border color */
+        position: relative;
+      }
+
+      .story-card:hover {
+        transform: scale(1.05);
+      }
+
+      .story-card:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+      }
+
+      .story-card.green-border {
+        border-color: #90ee90;
+      }
+
+      .story-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid #228be6; /* Default border color */
+        border-bottom-color: inherit;
+      }
+
+      .story-card.green-border .story-image {
+        border-bottom-color: #90ee90;
+      }
+
+      .story-title {
+        color: #228be6;
+        background: linear-gradient(45deg, #228be6, #15aabf);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: 1.5em;
+        padding: 15px;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .story-card.green-border .story-title {
+        color: #5c940d;
+        background: linear-gradient(45deg, #5c940d, #6b8e23);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
+      .story-link {
+        display: block;
+        text-decoration: none;
+      }
+
+      /* Desktop styles */
+      @media (min-width: 1024px) {
+        .container {
+          padding: 40px;
+          gap: 50px;
+        }
+
+        .story-card {
+          width: 350px;
+        }
+
+        .story-image {
+          height: 250px;
+        }
+
+        .story-title {
+          font-size: 1.8em;
+          padding: 20px;
+        }
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .story-link {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .story-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        max-width: 300px;
+        text-align: center;
+      }
+
+      .story-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .story-image {
+        width: 100%;
+        height: auto;
+      }
+
+      .story-title {
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="mariia.html" class="story-link">
+        <div class="story-card">
+          <img
+            src="file_adventure_cover.webp"
+            alt="Обкладинка Пригоди маленького файлу"
+            class="story-image"
+          />
+          <h2 class="story-title">Пригоди маленького файлу</h2>
+        </div>
+      </a>
+
+      <a href="marta.html" class="story-link">
+        <div class="story-card green-border">
+          <img
+            src="master_megabytes_cover.webp"
+            alt="Обкладинка Майстер Мегабайтів"
+            class="story-image"
+          />
+          <h2 class="story-title">Майстер Мегабайтів</h2>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
